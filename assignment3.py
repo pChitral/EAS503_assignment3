@@ -41,7 +41,14 @@ def ex2(sentence):
     # Hint: round the average to two decimal places
 
     # BEGIN SOLUTION
-    pass
+    word_len = []
+
+    list_of_words = sentence.split()
+    for word in list_of_words:
+        word_len.append(len(word))
+
+    average_word_len = round(sum(word_len) / len(word_len), 2)
+    return average_word_len
     # END SOLUTION
 
 
