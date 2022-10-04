@@ -111,9 +111,8 @@ def ex4(apr):
     # Relationship: value after one year is given by principal * (1+ apr)
 
     # BEGIN SOLUTION
-    principal_amount = 1
+    value = principal_amount = 1
     year = 0
-    value = principal_amount
     while (value < 2 * principal_amount):
         value = value * ((apr) + 1)
         year = year + 1
