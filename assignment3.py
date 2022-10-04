@@ -134,7 +134,7 @@ def ex5(n):
         number_of_steps += 1
     return number_of_steps
 
-        # END SOLUTION
+    # END SOLUTION
 
 
 def ex6(n):
