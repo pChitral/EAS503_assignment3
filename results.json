@@ -312,7 +312,7 @@
             "name": "test_ex3_1 (test_assignment3.TestAssignment3)",
             "score": 0.0,
             "max_score": 3,
-            "output": "Test Failed: (50, 643, 4298) != None\n",
+            "output": "Test Failed: Tuples differ: (50, 643, 4298) != (83, 634, 3540)\n\nFirst differing element 0:\n50\n83\n\n- (50, 643, 4298)\n+ (83, 634, 3540)\n",
             "visibility": "visible",
             "number": "3.1"
         },
