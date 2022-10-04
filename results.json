@@ -1,0 +1,462 @@
+{
+    "tests": [
+        {
+            "name": "test_ex10_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: [50, 50, 51, 52, 52, 52, 53, 53, 54, 55, [379 chars] 150] != None\n",
+            "visibility": "visible",
+            "number": "10.1"
+        },
+        {
+            "name": "test_ex10_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: [251, 251, 253, 254, 254, 254, 256, 257, [434 chars] 449] != None\n",
+            "visibility": "visible",
+            "number": "10.2"
+        },
+        {
+            "name": "test_ex11_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: [21, 1, 2, 3, 4, 5, 6, 7, 8] != None\n",
+            "visibility": "visible",
+            "number": "11.1"
+        },
+        {
+            "name": "test_ex11_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: ['The', 'Man', 'Boy', 'Output'] != None\n",
+            "visibility": "visible",
+            "number": "11.2"
+        },
+        {
+            "name": "test_ex12_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: [1, 2, 4, 7, 14] != None\n",
+            "visibility": "visible",
+            "number": "12.1"
+        },
+        {
+            "name": "test_ex12_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: [1, 2, 4, 8, 16, 31, 62, 124, 248] != None\n",
+            "visibility": "visible",
+            "number": "12.2"
+        },
+        {
+            "name": "test_ex13_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: True != None\n",
+            "visibility": "visible",
+            "number": "13.1"
+        },
+        {
+            "name": "test_ex13_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: False != None\n",
+            "visibility": "visible",
+            "number": "13.2"
+        },
+        {
+            "name": "test_ex13_3 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: True != None\n",
+            "visibility": "visible",
+            "number": "13.3"
+        },
+        {
+            "name": "test_ex13_4 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: False != None\n",
+            "visibility": "visible",
+            "number": "13.4"
+        },
+        {
+            "name": "test_ex14_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: (-1.11, 14.08) != None\n",
+            "visibility": "visible",
+            "number": "14.1"
+        },
+        {
+            "name": "test_ex14_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: (-0.79, 11.92) != None\n",
+            "visibility": "visible",
+            "number": "14.2"
+        },
+        {
+            "name": "test_ex15_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 10,
+            "output": "Test Failed: [Errno 2] No such file or directory: 'ex15_1.txt'\n",
+            "visibility": "visible",
+            "number": "15.1"
+        },
+        {
+            "name": "test_ex15_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 10,
+            "output": "Test Failed: [Errno 2] No such file or directory: 'ex15_2.txt'\n",
+            "visibility": "visible",
+            "number": "15.2"
+        },
+        {
+            "name": "test_ex15_3 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 10,
+            "output": "Test Failed: [Errno 2] No such file or directory: 'ex15_3.txt'\n",
+            "visibility": "visible",
+            "number": "15.3"
+        },
+        {
+            "name": "test_ex16_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: [3, 4, 6, 8, 9, 12, 15, 16, 18] != None\n",
+            "visibility": "visible",
+            "number": "16.1"
+        },
+        {
+            "name": "test_ex16_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: [102, 104, 105, 108, 111, 112, 114, 116, [49 chars] 138] != None\n",
+            "visibility": "visible",
+            "number": "16.2"
+        },
+        {
+            "name": "test_ex17_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: [0, 5, 6, 15, 12, 25, 18, 35, 24, 45, 30, 55, 36, 65, 42, 75, 48, 85, 54, 95] != None\n",
+            "visibility": "visible",
+            "number": "17.1"
+        },
+        {
+            "name": "test_ex17_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: [600, 1005, 606, 1015, 612, 1025, 618, 10[64 chars]1095] != None\n",
+            "visibility": "visible",
+            "number": "17.2"
+        },
+        {
+            "name": "test_ex18_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: ['January', 'March', 'May', 'July', 'August', 'October', 'December'] != None\n",
+            "visibility": "visible",
+            "number": "18.1"
+        },
+        {
+            "name": "test_ex18_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: ['April', 'June', 'September', 'November'] != None\n",
+            "visibility": "visible",
+            "number": "18.2"
+        },
+        {
+            "name": "test_ex19_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 0.499675 != None\n",
+            "visibility": "visible",
+            "number": "19.1"
+        },
+        {
+            "name": "test_ex19_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: type NoneType doesn't define __round__ method\n",
+            "visibility": "visible",
+            "number": "19.2"
+        },
+        {
+            "name": "test_ex19_3 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 'The file does not have any valid number to compute the median' != None\n",
+            "visibility": "visible",
+            "number": "19.3"
+        },
+        {
+            "name": "test_ex1_1 (test_assignment3.TestAssignment3)",
+            "score": 1,
+            "max_score": 1,
+            "visibility": "visible",
+            "number": "1.1"
+        },
+        {
+            "name": "test_ex1_10 (test_assignment3.TestAssignment3)",
+            "score": 1,
+            "max_score": 1,
+            "visibility": "visible",
+            "number": "1.10"
+        },
+        {
+            "name": "test_ex1_2 (test_assignment3.TestAssignment3)",
+            "score": 1,
+            "max_score": 1,
+            "visibility": "visible",
+            "number": "1.2"
+        },
+        {
+            "name": "test_ex1_3 (test_assignment3.TestAssignment3)",
+            "score": 1,
+            "max_score": 1,
+            "visibility": "visible",
+            "number": "1.3"
+        },
+        {
+            "name": "test_ex1_4 (test_assignment3.TestAssignment3)",
+            "score": 1,
+            "max_score": 1,
+            "visibility": "visible",
+            "number": "1.4"
+        },
+        {
+            "name": "test_ex1_5 (test_assignment3.TestAssignment3)",
+            "score": 1,
+            "max_score": 1,
+            "visibility": "visible",
+            "number": "1.5"
+        },
+        {
+            "name": "test_ex1_6 (test_assignment3.TestAssignment3)",
+            "score": 1,
+            "max_score": 1,
+            "visibility": "visible",
+            "number": "1.6"
+        },
+        {
+            "name": "test_ex1_7 (test_assignment3.TestAssignment3)",
+            "score": 1,
+            "max_score": 1,
+            "visibility": "visible",
+            "number": "1.7"
+        },
+        {
+            "name": "test_ex1_8 (test_assignment3.TestAssignment3)",
+            "score": 1,
+            "max_score": 1,
+            "visibility": "visible",
+            "number": "1.8"
+        },
+        {
+            "name": "test_ex1_9 (test_assignment3.TestAssignment3)",
+            "score": 1,
+            "max_score": 1,
+            "visibility": "visible",
+            "number": "1.9"
+        },
+        {
+            "name": "test_ex20_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 5,
+            "output": "Test Failed: 'NoneType' object is not subscriptable\n",
+            "visibility": "visible",
+            "number": "20.1"
+        },
+        {
+            "name": "test_ex20_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 5,
+            "output": "Test Failed: 'NoneType' object is not subscriptable\n",
+            "visibility": "visible",
+            "number": "20.2"
+        },
+        {
+            "name": "test_ex20_3 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 5,
+            "output": "Test Failed: cannot unpack non-iterable NoneType object\n",
+            "visibility": "visible",
+            "number": "20.3"
+        },
+        {
+            "name": "test_ex20_4 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 5,
+            "output": "Test Failed: cannot unpack non-iterable NoneType object\n",
+            "visibility": "visible",
+            "number": "20.4"
+        },
+        {
+            "name": "test_ex2_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 4 != None\n",
+            "visibility": "visible",
+            "number": "2.1"
+        },
+        {
+            "name": "test_ex2_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 5.46 != None\n",
+            "visibility": "visible",
+            "number": "2.2"
+        },
+        {
+            "name": "test_ex3_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: (50, 643, 4298) != None\n",
+            "visibility": "visible",
+            "number": "3.1"
+        },
+        {
+            "name": "test_ex4_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 12 != None\n",
+            "visibility": "visible",
+            "number": "4.1"
+        },
+        {
+            "name": "test_ex4_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 8 != None\n",
+            "visibility": "visible",
+            "number": "4.2"
+        },
+        {
+            "name": "test_ex5_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 17 != None\n",
+            "visibility": "visible",
+            "number": "5.1"
+        },
+        {
+            "name": "test_ex5_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 13 != None\n",
+            "visibility": "visible",
+            "number": "5.2"
+        },
+        {
+            "name": "test_ex5_3 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 9 != None\n",
+            "visibility": "visible",
+            "number": "5.3"
+        },
+        {
+            "name": "test_ex5_4 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 111 != None\n",
+            "visibility": "visible",
+            "number": "5.4"
+        },
+        {
+            "name": "test_ex6_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: False != None\n",
+            "visibility": "visible",
+            "number": "6.1"
+        },
+        {
+            "name": "test_ex6_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: True != None\n",
+            "visibility": "visible",
+            "number": "6.2"
+        },
+        {
+            "name": "test_ex6_3 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: True != None\n",
+            "visibility": "visible",
+            "number": "6.3"
+        },
+        {
+            "name": "test_ex6_4 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: False != None\n",
+            "visibility": "visible",
+            "number": "6.4"
+        },
+        {
+            "name": "test_ex7_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: [3, 5] != None\n",
+            "visibility": "visible",
+            "number": "7.1"
+        },
+        {
+            "name": "test_ex7_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: [3, 5, 7, 11, 13, 17, 19, 23] != None\n",
+            "visibility": "visible",
+            "number": "7.2"
+        },
+        {
+            "name": "test_ex8_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 25 != None\n",
+            "visibility": "visible",
+            "number": "8.1"
+        },
+        {
+            "name": "test_ex8_2 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 1 != None\n",
+            "visibility": "visible",
+            "number": "8.2"
+        },
+        {
+            "name": "test_ex8_3 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 2 != None\n",
+            "visibility": "visible",
+            "number": "8.3"
+        },
+        {
+            "name": "test_ex8_4 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: 24 != None\n",
+            "visibility": "visible",
+            "number": "8.4"
+        },
+        {
+            "name": "test_ex9_1 (test_assignment3.TestAssignment3)",
+            "score": 0.0,
+            "max_score": 3,
+            "output": "Test Failed: ('student733', 86.2, 'student202', 65.4) != None\n",
+            "visibility": "visible",
+            "number": "9.1"
+        }
+    ],
+    "leaderboard": [],
+    "visibility": "visible",
+    "execution_time": "0.01",
+    "score": 10.0
+}

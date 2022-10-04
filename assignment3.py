@@ -9,7 +9,26 @@ def ex1(password):
     # input: password (str)
     # output: True or False (bool)
     # BEGIN SOLUTION
-    pass
+
+    special_char = ["!", "@", "#", "$", "^"]
+
+    for char in password:
+        if char in special_char:
+            has_special_char = True
+            break
+        else:
+            has_special_char = False
+
+    if len(password) > 7:
+        pass_len_7plus = True
+    else:
+        pass_len_7plus = False
+
+    if not password.islower() and not password.isupper() and pass_len_7plus and has_special_char:
+        return True
+    else:
+        return False
+
     # END SOLUTION
 
 
@@ -184,34 +203,34 @@ def ex15(title, header, data, filename):
     # This problem is hard.
     # Open up ex15_*_solution.txt and look at the output based on the input parameters, which
     # can be found in the test_assignment4.py file
-    # Function inputs: 
+    # Function inputs:
     # title -- title of the table -- a string
     # header -- header of the table  -- a tuple
     # data -- rows of data, which is a tuple of tuples
     # filename -- name of file to write the table to
     # Your job is to create the table in the file and write it to `filename`
-    # Note that you need to dynamically figure out the width of each column based on 
-    # maximum possible length based on the header and data. This is what makes this problem hard. 
+    # Note that you need to dynamically figure out the width of each column based on
+    # maximum possible length based on the header and data. This is what makes this problem hard.
     # Once you have determined the maximum length of each column, make sure to pad it with 1 space
-    # to the right and left. Center align all the values. 
+    # to the right and left. Center align all the values.
     # OUTPUT: you are writing the table to a file
 
     # BEGIN SOLUTION
     pass
     # END SOLUTION
 
+
 def ex16(lst):
     # Complete this function to use list comprehension to return all values from `lst`
     # that are a multiple of 3 or 4. Just complete the list comprehension below.
     # input: `lst` of numbers
     # output: a list of numbers
-    
+
     # BEGIN SOLUTION
     # complete the following line!
     # return [for ele in lst] #complete this line!
-    pass # remove this line
+    pass  # remove this line
     # END SOLUTION
-
 
 
 def ex17(lst):
@@ -220,16 +239,15 @@ def ex17(lst):
     # input: `lst` of numbers
     # output: a list of numbers
 
-
     # BEGIN SOLUTION
     # complete the following line!
     # return [for ele in lst] #complete this line!
-    pass # remove this line
+    pass  # remove this line
     # END SOLUTION
 
 
 def ex18(input_dict, test_value):
-    # Complete this function to find all the keys in a dictionary that map to the input value. 
+    # Complete this function to find all the keys in a dictionary that map to the input value.
     # input1: input_dict (dict)
     # input2: test_value
     # output: list of keys
@@ -253,17 +271,18 @@ def ex19(filename):
 
     The files
     """
-    ### BEGIN SOLUTION
+    # BEGIN SOLUTION
     pass
-    ### END SOLUTION
+    # END SOLUTION
+
 
 def simulateProblem():
     """
     See instructions in exercise_19_instructions.html file
     """
-    ### BEGIN SOLUTION
+    # BEGIN SOLUTION
     pass
-    ### END SOLUTION
+    # END SOLUTION
 
 
 def ex20():
@@ -273,6 +292,6 @@ def ex20():
     and gaining more money when sticking to the original choice.
     Return the probability of win due to sticking and win due to switching
     """
-    ### BEGIN SOLUTION
+    # BEGIN SOLUTION
     pass
-    ### END SOLUTION
+    # END SOLUTION
