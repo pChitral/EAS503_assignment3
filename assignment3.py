@@ -96,8 +96,8 @@ def ex3(filename):
 
     final_answer_tuple = (
         number_of_lines, number_of_words, number_of_characters)
-    
-    return final_answer_tuple    
+
+    return final_answer_tuple
     # END SOLUTION
 
 
@@ -111,14 +111,13 @@ def ex4(apr):
     # Relationship: value after one year is given by principal * (1+ apr)
 
     # BEGIN SOLUTION
-    while ((2 * principal_amount) < (principal_amount)):
-        print(year)
-        print(principal_amount)
-        print(apr)
-        principal_amount = principal_amount * apr
+    principal_amount = 1
+    year = 0
+    value = principal_amount
+    while (value < 2 * principal_amount):
+        value = value * ((apr) + 1)
         year = year + 1
-
-    return (year)
+    return year
     # END SOLUTION
 
 
