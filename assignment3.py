@@ -125,8 +125,16 @@ def ex5(n):
     # the Collatz sequence (https://en.wikipedia.org/wiki/Collatz_conjecture) given in
 
     # BEGIN SOLUTION
-    pass
-    # END SOLUTION
+    number_of_steps = 0
+    while n > 1:
+        if n % 2 == 0:
+            n /= 2
+        else:
+            n = 3*n + 1
+        number_of_steps += 1
+    return number_of_steps
+
+        # END SOLUTION
 
 
 def ex6(n):
