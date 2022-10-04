@@ -111,7 +111,14 @@ def ex4(apr):
     # Relationship: value after one year is given by principal * (1+ apr)
 
     # BEGIN SOLUTION
-    pass
+    while ((2 * principal_amount) < (principal_amount)):
+        print(year)
+        print(principal_amount)
+        print(apr)
+        principal_amount = principal_amount * apr
+        year = year + 1
+
+    return (year)
     # END SOLUTION
 
 
