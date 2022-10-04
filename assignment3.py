@@ -145,6 +145,14 @@ def ex6(n):
     # Hint: if number is 2, return False
 
     import math
+    if n == 2:
+        return False
+    i = 2
+    while i <= math.sqrt(n):
+        if n % i == 0:
+            return False
+        i += 1
+    return True
 
     # BEGIN SOLUTION
     pass
