@@ -416,9 +416,8 @@
         },
         {
             "name": "test_ex8_3 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: 2 != 1\n",
             "visibility": "visible",
             "number": "8.3"
         },
@@ -441,5 +440,5 @@
     "leaderboard": [],
     "visibility": "visible",
     "execution_time": "0.01",
-    "score": 61.0
+    "score": 64.0
 }
