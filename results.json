@@ -402,17 +402,15 @@
         },
         {
             "name": "test_ex8_1 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: 25 != None\n",
             "visibility": "visible",
             "number": "8.1"
         },
         {
             "name": "test_ex8_2 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: 1 != None\n",
             "visibility": "visible",
             "number": "8.2"
         },
@@ -420,15 +418,14 @@
             "name": "test_ex8_3 (test_assignment3.TestAssignment3)",
             "score": 0.0,
             "max_score": 3,
-            "output": "Test Failed: 2 != None\n",
+            "output": "Test Failed: 2 != 1\n",
             "visibility": "visible",
             "number": "8.3"
         },
         {
             "name": "test_ex8_4 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: 24 != None\n",
             "visibility": "visible",
             "number": "8.4"
         },
@@ -444,5 +441,5 @@
     "leaderboard": [],
     "visibility": "visible",
     "execution_time": "0.01",
-    "score": 52.0
+    "score": 61.0
 }

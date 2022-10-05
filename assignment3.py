@@ -186,8 +186,28 @@ def ex8(m, n):
     # Output: gcd
 
     # BEGIN SOLUTION
-    pass
-    # END SOLUTION
+    ans = None
+    if m < n or n > m:
+        divisor = m
+        dividend = n
+    elif m == n:
+        divisor = m
+        dividend = m
+    else:
+        divisor = n
+        dividend = m
+    for i in range(divisor, 0, -1):
+        if (dividend % divisor == 0):
+            ans = divisor
+            break
+        else:
+            continue
+    if not ans:
+        return 1
+    else:
+        return ans
+
+        # END SOLUTION
 
 
 def ex9(filename):
