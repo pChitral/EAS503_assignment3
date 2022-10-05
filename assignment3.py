@@ -167,19 +167,11 @@ def ex7(n):
 
     # BEGIN SOLUTION
     primes = []
-    if n >= 2:
-        primes = [2]
-    if n >= 3:
-        primes = [2, 3]
-    if n >= 5:
-        primes = [2, 3, 5]
-    if n >= 7:
-        primes = [2, 3, 5, 7]
     for i in range(2, n+1):
-        if i % 2 == 0 or i % 3 == 0 or i % 5 == 0 or i % 7 == 0:
-            continue
-        else:
+        if ex6(i):
             primes.append(i)
+        else:
+            continue
     return primes
 
     # END SOLUTION
