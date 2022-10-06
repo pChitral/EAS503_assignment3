@@ -224,6 +224,7 @@ def ex9(filename):
         dicto["marks"] = [eval(i) for i in (maal[i][1:])]
         list_of_dicts.append(dicto)
 
+
     # END SOLUTION
 ex9("ex9_data.txt")
 
@@ -382,7 +383,7 @@ def ex17(lst):
     # BEGIN SOLUTION
     # complete the following line!
     # return [for ele in lst] #complete this line!
-    pass  # remove this line
+    return [ele*3 if ele % 2 == 0 else ele*5 for ele in lst]
     # END SOLUTION
 
 
