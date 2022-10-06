@@ -261,7 +261,9 @@ def ex11(words):
     # Preserve order
 
     # BEGIN SOLUTION
-    pass
+    no_duplicates = []
+    [no_duplicates.append(i) for i in words if i not in no_duplicates]
+    return no_duplicates
     # END SOLUTION
 
 
