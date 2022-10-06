@@ -224,7 +224,6 @@ def ex9(filename):
         dicto["marks"] = [eval(i) for i in (maal[i][1:])]
         list_of_dicts.append(dicto)
 
-
     # END SOLUTION
 ex9("ex9_data.txt")
 
@@ -297,7 +296,14 @@ def ex13(n):
     # output: True or False (bool)
 
     # BEGIN SOLUTION
-    pass
+    proper_divisors_list = ex12(n)
+    sum = 0
+    for number in proper_divisors_list:
+        sum += number
+    if sum == n:
+        return True
+    else:
+        return False
     # END SOLUTION
 
 
