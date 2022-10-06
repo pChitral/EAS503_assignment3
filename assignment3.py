@@ -224,6 +224,7 @@ def ex9(filename):
         dicto["marks"] = [eval(i) for i in (maal[i][1:])]
         list_of_dicts.append(dicto)
 
+
     # END SOLUTION
 ex9("ex9_data.txt")
 
@@ -262,13 +263,13 @@ def ex11(words):
 
     # BEGIN SOLUTION
     no_duplicates = []
-    [no_duplicates.append(i) for i in words if i not in no_duplicates]
+    [no_duplicates.append(word) for word in words if word not in no_duplicates]
     return no_duplicates
     # END SOLUTION
 
 
 def ex12(n):
-    # A proper divisor ofa  positive integer, n, is a positive integer less than n which divides
+    # A proper divisor of a  positive integer, n, is a positive integer less than n which divides
     # evenly into n. Complete this function to compute all the proper divisors of a positive
     # integer. The integer is passed to this function as the only parameter. The function will
     # return a list of containing all of the proper divisors as its only result.
@@ -277,7 +278,13 @@ def ex12(n):
     # output: list
 
     # BEGIN SOLUTION
-    pass
+    proper_divisors = []
+    for i in range(1, n+1):
+        if n % i == 0:
+            proper_divisors.append(i)
+    proper_divisors.remove(n)
+    return proper_divisors
+
     # END SOLUTION
 
 
