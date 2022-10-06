@@ -322,7 +322,19 @@ def ex14(points):
     x_sum = sum(x)
     y_sum = sum(y)
 
+    x_mean = x_sum / len(x)
+    y_mean = y_sum / len(y)
 
+    x_denom = []
+    numerator_fina = []
+    for i in range(len(x)):
+        numerator_fina.append((x[i] - x_mean)*(y[i]-y_mean))
+        x_denom.append((x[i] - x_mean)**2)
+    slope = sum(numerator_fina)/sum(x_denom)
+    b = y_mean - (slope)*(x_mean)
+    b = round(b, 2)
+    slope = round(slope, 2)
+    return (slope, b)
 
     # END SOLUTION
 

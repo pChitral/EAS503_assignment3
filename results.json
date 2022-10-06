@@ -72,17 +72,15 @@
         },
         {
             "name": "test_ex14_1 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: (-1.11, 14.08) != None\n",
             "visibility": "visible",
             "number": "14.1"
         },
         {
             "name": "test_ex14_2 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: (-0.79, 11.92) != None\n",
             "visibility": "visible",
             "number": "14.2"
         },
@@ -430,5 +428,5 @@
     "leaderboard": [],
     "visibility": "visible",
     "execution_time": "0.08",
-    "score": 94.0
+    "score": 100.0
 }
