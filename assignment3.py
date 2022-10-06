@@ -314,7 +314,16 @@ def ex14(points):
     # output: (m, b) # round both values to two decimal places
 
     # BEGIN SOLUTION
-    pass
+    x = []
+    y = []
+    for point in points:
+        x.append(point[0])
+        y.append(point[1])
+    x_sum = sum(x)
+    y_sum = sum(y)
+
+
+
     # END SOLUTION
 
 
