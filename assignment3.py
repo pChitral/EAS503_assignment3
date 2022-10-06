@@ -209,9 +209,24 @@ def ex9(filename):
     # Hint: Round to two decimal places
 
     # BEGIN SOLUTION
-    pass
-    # END SOLUTION
+    with open("ex9_data.txt", "r") as raw_file:
+        entire_file = raw_file.read()
 
+    list_of_student_names_and_marks = entire_file.split("\n")
+    list_of_student_names_and_marks = list_of_student_names_and_marks[::2]
+    maal = []
+    for i in range(len(list_of_student_names_and_marks)):
+        maal.append(list_of_student_names_and_marks[i].split(","))
+    dicto = {}
+    list_of_dicts = []
+    for i in range(len(maal)-1):
+        dicto["name"] = (maal[i][0])
+        dicto["marks"] = [eval(i) for i in (maal[i][1:])]
+        list_of_dicts.append(dicto)
+        
+
+    # END SOLUTION
+ex9("ex9_data.txt")
 
 def ex10(data, num_outliers):
     # When analyzing data collected as a part of a science experiment it
