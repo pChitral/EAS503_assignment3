@@ -224,7 +224,6 @@ def ex9(filename):
         dicto["marks"] = [eval(i) for i in (maal[i][1:])]
         list_of_dicts.append(dicto)
 
-
     # END SOLUTION
 ex9("ex9_data.txt")
 
@@ -394,7 +393,9 @@ def ex18(input_dict, test_value):
     # output: list of keys
 
     # BEGIN SOLUTION
-    pass
+    list_of_keys = [key for key in input_dict if input_dict[key] == test_value]
+    return list_of_keys
+
     # END SOLUTION
 
 

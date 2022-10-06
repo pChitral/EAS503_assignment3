@@ -138,17 +138,15 @@
         },
         {
             "name": "test_ex18_1 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: ['January', 'March', 'May', 'July', 'August', 'October', 'December'] != None\n",
             "visibility": "visible",
             "number": "18.1"
         },
         {
             "name": "test_ex18_2 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: ['April', 'June', 'September', 'November'] != None\n",
             "visibility": "visible",
             "number": "18.2"
         },
@@ -424,5 +422,5 @@
     "leaderboard": [],
     "visibility": "visible",
     "execution_time": "0.08",
-    "score": 112.0
+    "score": 118.0
 }
