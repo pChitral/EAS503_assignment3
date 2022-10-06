@@ -110,17 +110,15 @@
         },
         {
             "name": "test_ex16_1 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: [3, 4, 6, 8, 9, 12, 15, 16, 18] != None\n",
             "visibility": "visible",
             "number": "16.1"
         },
         {
             "name": "test_ex16_2 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: [102, 104, 105, 108, 111, 112, 114, 116, [49 chars] 138] != None\n",
             "visibility": "visible",
             "number": "16.2"
         },
@@ -428,5 +426,5 @@
     "leaderboard": [],
     "visibility": "visible",
     "execution_time": "0.08",
-    "score": 100.0
+    "score": 106.0
 }

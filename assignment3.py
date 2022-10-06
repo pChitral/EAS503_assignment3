@@ -369,7 +369,7 @@ def ex16(lst):
     # BEGIN SOLUTION
     # complete the following line!
     # return [for ele in lst] #complete this line!
-    pass  # remove this line
+    return [ele for ele in lst if ele % 3 == 0 or ele % 4 == 0]
     # END SOLUTION
 
 
