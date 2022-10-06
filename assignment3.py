@@ -223,10 +223,10 @@ def ex9(filename):
         dicto["name"] = (maal[i][0])
         dicto["marks"] = [eval(i) for i in (maal[i][1:])]
         list_of_dicts.append(dicto)
-        
 
     # END SOLUTION
 ex9("ex9_data.txt")
+
 
 def ex10(data, num_outliers):
     # When analyzing data collected as a part of a science experiment it
@@ -240,6 +240,11 @@ def ex10(data, num_outliers):
     # match the order of the elements in the original list.
     # input1: data (list)
     # input2: num_outliers (int)
+    data.sort()
+    for i in range(num_outliers):
+        data.remove(max(data))
+        data.remove(min(data))
+    return data
 
     # output: list
 

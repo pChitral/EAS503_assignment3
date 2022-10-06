@@ -2,17 +2,15 @@
     "tests": [
         {
             "name": "test_ex10_1 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: [50, 50, 51, 52, 52, 52, 53, 53, 54, 55, [379 chars] 150] != None\n",
             "visibility": "visible",
             "number": "10.1"
         },
         {
             "name": "test_ex10_2 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: [251, 251, 253, 254, 254, 254, 256, 257, [434 chars] 449] != None\n",
             "visibility": "visible",
             "number": "10.2"
         },
@@ -439,6 +437,6 @@
     ],
     "leaderboard": [],
     "visibility": "visible",
-    "execution_time": "0.01",
-    "score": 64.0
+    "execution_time": "0.08",
+    "score": 70.0
 }
