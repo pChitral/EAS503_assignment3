@@ -202,9 +202,7 @@ def ex9(filename):
     min_index = avg.index(min_value)
     return (names[max_index], max_value, names[min_index], min_value)
 
-
     # END SOLUTION
-ex9("ex9_data.txt")
 
 
 def ex10(data, num_outliers):
