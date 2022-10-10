@@ -58,46 +58,20 @@ def ex3(filename):
     # Output: a tuple with line count, word count, and char count -- in this order
 
     # BEGIN SOLUTION
-    with open(filename, "r") as raw_file:
-        entire_file = raw_file.read()
-
-    list_of_lines = entire_file.split(".")
-
-    """ 
-    Splitting on "." will give us an empty string in the last which indeed would be counted as a line. 
-    Thus, to get rid of that empty string we rewrite our list without considering that empty string.
-    """
-    list_of_lines = list_of_lines[:len(list_of_lines)-1]
-    number_of_lines = len(list_of_lines)  # part 1 of the question done
-
-    # Before doing anything, lets strip out the spaces and get rid of the unnecessary characters, which may skew the results.
-    for i in range(len(list_of_lines)):
-        list_of_lines[i] = list_of_lines[i].replace("\n", "").strip()
-
-    # Here we'll count the total number of words in a line using a for loop
+    number_of_lines = 0
     number_of_words = 0
-
-    # Lets calulate the list of list of words first
-    list_of_list_of_words = []
-
-    for line in list_of_lines:
-        list_of_list_of_words.append(line.split(" "))
-
-    # Now we'll calculate the total number of words
-    number_of_words = 0
-    for line in list_of_list_of_words:
-        number_of_words += len(line)
-
     number_of_characters = 0
+    with open(filename, 'r') as file:
+        for line in file:
+            # It is very important that we calculate the number of characters before splitting the line on \n since we would be loosing that character and the results would be nothing if not inaccurate
+            number_of_characters += len(line)
+            line = line.strip("\n")
+            words = line.split()
+            number_of_lines += 1
+            number_of_words += len(words)
 
-    for list_of_wordss in list_of_list_of_words:
-        for word in list_of_wordss:
-            number_of_characters += len(word)
+    return (number_of_lines, number_of_words, number_of_characters)
 
-    final_answer_tuple = (
-        number_of_lines, number_of_words, number_of_characters)
-
-    return final_answer_tuple
     # END SOLUTION
 
 
@@ -223,6 +197,7 @@ def ex9(filename):
         dicto["name"] = (maal[i][0])
         dicto["marks"] = [eval(i) for i in (maal[i][1:])]
         list_of_dicts.append(dicto)
+
 
     # END SOLUTION
 ex9("ex9_data.txt")
