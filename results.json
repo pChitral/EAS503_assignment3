@@ -411,15 +411,14 @@
         },
         {
             "name": "test_ex9_1 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: ('student733', 86.2, 'student202', 65.4) != None\n",
             "visibility": "visible",
             "number": "9.1"
         }
     ],
     "leaderboard": [],
     "visibility": "visible",
-    "execution_time": "0.08",
-    "score": 121.0
+    "execution_time": "0.01",
+    "score": 124.0
 }

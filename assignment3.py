@@ -183,20 +183,24 @@ def ex9(filename):
     # Hint: Round to two decimal places
 
     # BEGIN SOLUTION
-    with open("ex9_data.txt", "r") as raw_file:
-        entire_file = raw_file.read()
+    with open(filename, "r") as raw_file:
 
-    list_of_student_names_and_marks = entire_file.split("\n")
-    list_of_student_names_and_marks = list_of_student_names_and_marks[::2]
-    maal = []
-    for i in range(len(list_of_student_names_and_marks)):
-        maal.append(list_of_student_names_and_marks[i].split(","))
-    dicto = {}
-    list_of_dicts = []
-    for i in range(len(maal)-1):
-        dicto["name"] = (maal[i][0])
-        dicto["marks"] = [eval(i) for i in (maal[i][1:])]
-        list_of_dicts.append(dicto)
+        adulterated_list = []
+        names = []
+        avg = []
+        for line in raw_file:
+            adulterated_list.append(line.split())
+        cleaned_list = adulterated_list[::2]
+
+        for line in cleaned_list:
+            names.append(line[0].split(",")[0])
+            marks = line[0].split(",")[1:]
+            avg.append(round(sum(map(int, marks))/25, 2))
+    max_value = max(avg)
+    max_index = avg.index(max_value)
+    min_value = min(avg)
+    min_index = avg.index(min_value)
+    return (names[max_index], max_value, names[min_index], min_value)
 
 
     # END SOLUTION
