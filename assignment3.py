@@ -391,7 +391,17 @@ def ex19(filename):
     The files
     """
     # BEGIN SOLUTION
-    pass
+    numbers = []
+    with open(filename, "r") as raw_file:
+        for line in raw_file.readlines():
+            try:
+                numbers.append(float(line))
+            except:
+                pass
+    numbers.sort()
+    midpoint = len(numbers) // 2
+    median = (numbers[midpoint] + numbers[midpoint]) / 2
+    return median          
     # END SOLUTION
 
 

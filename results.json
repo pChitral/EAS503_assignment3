@@ -152,9 +152,8 @@
         },
         {
             "name": "test_ex19_1 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: 0.499675 != None\n",
             "visibility": "visible",
             "number": "19.1"
         },
@@ -162,7 +161,7 @@
             "name": "test_ex19_2 (test_assignment3.TestAssignment3)",
             "score": 0.0,
             "max_score": 3,
-            "output": "Test Failed: type NoneType doesn't define __round__ method\n",
+            "output": "Test Failed: 0.4994 != 0.499675\n",
             "visibility": "visible",
             "number": "19.2"
         },
@@ -170,7 +169,7 @@
             "name": "test_ex19_3 (test_assignment3.TestAssignment3)",
             "score": 0.0,
             "max_score": 3,
-            "output": "Test Failed: 'The file does not have any valid number to compute the median' != None\n",
+            "output": "Test Failed: list index out of range\n",
             "visibility": "visible",
             "number": "19.3"
         },
@@ -420,5 +419,5 @@
     "leaderboard": [],
     "visibility": "visible",
     "execution_time": "0.01",
-    "score": 124.0
+    "score": 127.0
 }
