@@ -19,15 +19,9 @@ def ex1(password):
         else:
             has_special_char = False
 
-    if len(password) > 7:
-        pass_len_7plus = True
-    else:
-        pass_len_7plus = False
+    pass_len_7plus = True if len(password) > 7 else False
 
-    if not password.islower() and not password.isupper() and pass_len_7plus and has_special_char:
-        return True
-    else:
-        return False
+    return True if not password.islower() and not password.isupper() and pass_len_7plus and has_special_char else False
 
     # END SOLUTION
 
@@ -41,9 +35,7 @@ def ex2(sentence):
     # Hint: round the average to two decimal places
 
     # BEGIN SOLUTION
-
-    list_of_words = sentence.split()
-    word_len = [len(word) for word in list_of_words]
+    word_len = [len(word) for word in sentence.split()]
 
     return round(sum(word_len) / len(word_len), 2)
     # END SOLUTION
