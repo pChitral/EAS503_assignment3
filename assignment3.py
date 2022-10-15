@@ -414,10 +414,10 @@ def simulateProblem():
     See instructions in exercise_19_instructions.html file
     """
     # BEGIN SOLUTION
-    import random 
+    import random
     first_choice = random.randint(0, 1)
 
-    # we'll enter the if condition if we wish to switch the card 
+    # we'll enter the if condition if we wish to switch the card
     if (random.randint(0, 1)):
         if first_choice == 0:
             return [True, False]
@@ -428,7 +428,7 @@ def simulateProblem():
         if first_choice == 0:
             return [False, False]
         else:
-            return [True, True]    
+            return [True, True]
     # END SOLUTION
 
 
@@ -444,11 +444,11 @@ def ex20():
     switch = 0
     for i in range(10000):
         outcome, experiment = simulateProblem()
-        if experiment:
-            stick+=1
-        else:
-            switch+=1
+        if [outcome, experiment] == [True, True]:
+            stick += 1
+        elif [outcome, experiment] == [True, False]:
+            switch += 1
 
-    return([stick/10000, switch/10000])        
+    return([stick/10000, switch/10000])
 
     # END SOLUTION

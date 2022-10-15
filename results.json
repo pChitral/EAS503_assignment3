@@ -257,17 +257,15 @@
         },
         {
             "name": "test_ex20_3 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 5,
             "max_score": 5,
-            "output": "Test Failed: False != True\n",
             "visibility": "visible",
             "number": "20.3"
         },
         {
             "name": "test_ex20_4 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 5,
             "max_score": 5,
-            "output": "Test Failed: False != True\n",
             "visibility": "visible",
             "number": "20.4"
         },
@@ -414,6 +412,6 @@
     ],
     "leaderboard": [],
     "visibility": "visible",
-    "execution_time": "0.04",
-    "score": 143.0
+    "execution_time": "0.05",
+    "score": 153.0
 }
