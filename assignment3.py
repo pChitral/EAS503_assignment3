@@ -414,7 +414,21 @@ def simulateProblem():
     See instructions in exercise_19_instructions.html file
     """
     # BEGIN SOLUTION
-    pass
+    import random 
+    first_choice = random.randint(0, 1)
+
+    # we'll enter the if condition if we wish to switch the card 
+    if (random.randint(0, 1)):
+        if first_choice == 0:
+            return [True, False]
+        else:
+            return [False, True]
+    # Else condition deals with the case where we don't wish to pick a new card but stick to the first choice
+    else:
+        if first_choice == 0:
+            return [False, False]
+        else:
+            return [True, True]    
     # END SOLUTION
 
 
@@ -426,5 +440,15 @@ def ex20():
     Return the probability of win due to sticking and win due to switching
     """
     # BEGIN SOLUTION
-    pass
+    stick = 0
+    switch = 0
+    for i in range(10000):
+        outcome, experiment = simulateProblem()
+        if experiment:
+            stick+=1
+        else:
+            switch+=1
+
+    return([stick/10000, switch/10000])        
+
     # END SOLUTION
