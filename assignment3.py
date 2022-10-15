@@ -398,7 +398,6 @@ def ex19(filename):
                 numbers.append(float(line))
             except:
                 pass
-    
     numbers.sort()
     middle_index = len(numbers) // 2
     if len(numbers) == 0:
