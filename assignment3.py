@@ -398,10 +398,15 @@ def ex19(filename):
                 numbers.append(float(line))
             except:
                 pass
+    
     numbers.sort()
-    midpoint = len(numbers) // 2
-    median = (numbers[midpoint] + numbers[midpoint]) / 2
-    return median          
+    middle_index = len(numbers) // 2
+    if len(numbers) == 0:
+        return 'The file does not have any valid number to compute the median'
+    median = (numbers[middle_index] + numbers[middle_index-1]) / \
+        2 if len(numbers) % 2 == 0 else numbers[middle_index]
+
+    return median
     # END SOLUTION
 
 

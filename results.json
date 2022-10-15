@@ -159,17 +159,15 @@
         },
         {
             "name": "test_ex19_2 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: 0.4994 != 0.499675\n",
             "visibility": "visible",
             "number": "19.2"
         },
         {
             "name": "test_ex19_3 (test_assignment3.TestAssignment3)",
-            "score": 0.0,
+            "score": 3,
             "max_score": 3,
-            "output": "Test Failed: list index out of range\n",
             "visibility": "visible",
             "number": "19.3"
         },
@@ -419,5 +417,5 @@
     "leaderboard": [],
     "visibility": "visible",
     "execution_time": "0.01",
-    "score": 127.0
+    "score": 133.0
 }
