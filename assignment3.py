@@ -41,14 +41,11 @@ def ex2(sentence):
     # Hint: round the average to two decimal places
 
     # BEGIN SOLUTION
-    word_len = []
 
     list_of_words = sentence.split()
-    for word in list_of_words:
-        word_len.append(len(word))
+    word_len = [len(word) for word in list_of_words]
 
-    average_word_len = round(sum(word_len) / len(word_len), 2)
-    return average_word_len
+    return round(sum(word_len) / len(word_len), 2)
     # END SOLUTION
 
 
@@ -61,6 +58,7 @@ def ex3(filename):
     number_of_lines = 0
     number_of_words = 0
     number_of_characters = 0
+
     with open(filename, 'r') as file:
         for line in file:
             # It is very important that we calculate the number of characters before splitting the line on \n since we would be loosing that character and the results would be nothing if not inaccurate
@@ -89,7 +87,7 @@ def ex4(apr):
     year = 0
     while (value < 2 * principal_amount):
         value = value * ((apr) + 1)
-        year = year + 1
+        year += 1
     return year
     # END SOLUTION
 
@@ -127,10 +125,6 @@ def ex6(n):
             return False
         i += 1
     return True
-
-    # BEGIN SOLUTION
-    pass
-    # END SOLUTION
 
 
 def ex7(n):
@@ -217,17 +211,12 @@ def ex10(data, num_outliers):
     # match the order of the elements in the original list.
     # input1: data (list)
     # input2: num_outliers (int)
+
     data.sort()
     for i in range(num_outliers):
         data.remove(max(data))
         data.remove(min(data))
     return data
-
-    # output: list
-
-    # BEGIN SOLUTION
-    pass
-    # END SOLUTION
 
 
 def ex11(words):
@@ -254,11 +243,9 @@ def ex12(n):
     # output: list
 
     # BEGIN SOLUTION
-    proper_divisors = []
-    for i in range(1, n+1):
-        if n % i == 0:
-            proper_divisors.append(i)
+    proper_divisors = [i for i in range(1, n+1) if n % i == 0]
     proper_divisors.remove(n)
+
     return proper_divisors
 
     # END SOLUTION
@@ -277,10 +264,8 @@ def ex13(n):
     sum = 0
     for number in proper_divisors_list:
         sum += number
-    if sum == n:
-        return True
-    else:
-        return False
+    return True if sum == n else False
+
     # END SOLUTION
 
 
@@ -296,6 +281,7 @@ def ex14(points):
     for point in points:
         x.append(point[0])
         y.append(point[1])
+
     x_sum = sum(x)
     y_sum = sum(y)
 
@@ -304,13 +290,16 @@ def ex14(points):
 
     x_denom = []
     numerator_fina = []
+
     for i in range(len(x)):
         numerator_fina.append((x[i] - x_mean)*(y[i]-y_mean))
         x_denom.append((x[i] - x_mean)**2)
+
     slope = sum(numerator_fina)/sum(x_denom)
     b = y_mean - (slope)*(x_mean)
     b = round(b, 2)
     slope = round(slope, 2)
+
     return (slope, b)
 
     # END SOLUTION
@@ -370,8 +359,8 @@ def ex18(input_dict, test_value):
     # output: list of keys
 
     # BEGIN SOLUTION
-    list_of_keys = [key for key in input_dict if input_dict[key] == test_value]
-    return list_of_keys
+
+    return [key for key in input_dict if input_dict[key] == test_value]
 
     # END SOLUTION
 
@@ -392,16 +381,19 @@ def ex19(filename):
     """
     # BEGIN SOLUTION
     numbers = []
+
     with open(filename, "r") as raw_file:
         for line in raw_file.readlines():
             try:
                 numbers.append(float(line))
             except:
                 pass
+
     numbers.sort()
     middle_index = len(numbers) // 2
     if len(numbers) == 0:
         return 'The file does not have any valid number to compute the median'
+
     median = (numbers[middle_index] + numbers[middle_index-1]) / \
         2 if len(numbers) % 2 == 0 else numbers[middle_index]
 
@@ -417,7 +409,7 @@ def simulateProblem():
     import random
     first_choice = random.randint(0, 1)
 
-    # we'll enter the if condition if we wish to switch the card
+    # we'll execute the code undder the if block when we wish to switch the card
     if (random.randint(0, 1)):
         if first_choice == 0:
             return [True, False]
@@ -442,6 +434,7 @@ def ex20():
     # BEGIN SOLUTION
     stick = 0
     switch = 0
+
     for i in range(10000):
         outcome, experiment = simulateProblem()
         if [outcome, experiment] == [True, True]:
