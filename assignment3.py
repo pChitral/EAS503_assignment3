@@ -326,14 +326,14 @@ def ex15(title, header, data, filename):
 
         # Writing the  horizontal line
         for i in range(1):
-            for j in range(len(str(data[i])):
+            for j in range(len(str(data[i]))):
                 if (j == (len(header) - 1)):
                     file.write("-")
-                    file.write(f"-"*(len(str(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4)))
                     file.write("-")
                 else:
                     file.write("-")
-                    file.write(f"-"*(len(str(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4)))
             file.write("\n")
 
         # Putting in the title
@@ -344,62 +344,62 @@ def ex15(title, header, data, filename):
 
         # Writing the  horizontal line
         for i in range(1):
-            for j in range(len(str(data[i])):
+            for j in range(len(str(data[i]))):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4)))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4)))
             file.write("\n")
 
         # Writing the column names
         i=1
-        for j in range(len(str(data[i])):
+        for j in range(len(str(data[i]))):
             if (j == (len(header) - 1)):
                 file.write("|")
-                file.write(f"{header[j].center((len(str(data[i][j])+4))}")
+                file.write(f"{header[j].center((len(str(data[i][j])+4)))}")
                 file.write("|")
             else:
                 file.write("|")
-                file.write(f"{header[j].center((len(str(data[i][j])+4))}")
+                file.write(f"{header[j].center((len(str(data[i][j])+4)))}")
         file.write("\n")
 
         # Writing the  horizontal line
         for i in range(1):
-            for j in range(len(str(data[i])):
+            for j in range(len(str(data[i]))):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4)))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4)))
             file.write("\n")
 
         # Writing the data
         for i in range(len(data)):
-            for j in range(len(str(data[i])):
+            for j in range(len(str(data[i]))):
                 if (j == (len(header) - 1)):
                     file.write("|")
-                    file.write(f"{str(data[i][j].center((len(str(data[i][j])+4))}")
+                    file.write(f"{str(data[i][j].center((len(str(data[i][j])+4))))}")
                     file.write("|")
                 else:
                     file.write("|")
-                    file.write(f"{str(data[i][j].center((len(str(data[i][j])+4))}")
+                    file.write(f"{str(data[i][j].center((len(str(data[i][j])+4))))}")
             file.write("\n")
 
         # Writing the last horizontal line
         for i in range(1):
-            for j in range(len(str(data[i])):
+            for j in range(len(str(data[i]))):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4)))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4)))
             file.write("\n")
 
 
