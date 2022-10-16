@@ -88,7 +88,7 @@
             "name": "test_ex15_1 (test_assignment3.TestAssignment3)",
             "score": 0.0,
             "max_score": 10,
-            "output": "Test Failed: [Errno 2] No such file or directory: 'ex15_1.txt'\n",
+            "output": "Test Failed: object of type 'int' has no len()\n",
             "visibility": "visible",
             "number": "15.1"
         },
@@ -96,7 +96,7 @@
             "name": "test_ex15_2 (test_assignment3.TestAssignment3)",
             "score": 0.0,
             "max_score": 10,
-            "output": "Test Failed: [Errno 2] No such file or directory: 'ex15_2.txt'\n",
+            "output": "Test Failed: '----[61 chars]----------\\n|                       MOST ACTIV[730 chars]---+' != '----[61 chars]-----\\n|                    MOST ACTIVE BY SHA[606 chars]-+\\n'\nDiff is 2441 characters long. Set self.maxDiff to None to see it.\n",
             "visibility": "visible",
             "number": "15.2"
         },
@@ -104,7 +104,7 @@
             "name": "test_ex15_3 (test_assignment3.TestAssignment3)",
             "score": 0.0,
             "max_score": 10,
-            "output": "Test Failed: [Errno 2] No such file or directory: 'ex15_3.txt'\n",
+            "output": "Test Failed: object of type 'int' has no len()\n",
             "visibility": "visible",
             "number": "15.3"
         },
@@ -412,6 +412,6 @@
     ],
     "leaderboard": [],
     "visibility": "visible",
-    "execution_time": "0.05",
+    "execution_time": "0.06",
     "score": 153.0
 }
