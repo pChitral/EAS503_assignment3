@@ -324,17 +324,21 @@ def ex15(title, header, data, filename):
 
     with open(filename, "w") as file:
 
-        # Printing the first line of the table
-        horizonal_chars = (max_length + len(header) + 1)
-        file.write(f"-" * horizonal_chars)
-        file.write("\n")
+        # Writing the  horizontal line
+        for i in range(1):
+            for j in range(len(data[i])):
+                if (j == (len(header) - 1)):
+                    file.write("-")
+                    file.write(f"-"*(len(data[i][j])+4))
+                    file.write("-")
+                else:
+                    file.write("-")
+                    file.write(f"-"*(len(data[i][j])+4))
+            file.write("\n")
 
         # Putting in the title
         file.write("|")
-        left_spaces = (horizonal_chars - 2 - len(title)) // 2
-        file.write(f" " * left_spaces)
-        file.write(f"{title}")
-        file.write(f" " * (horizonal_chars-2 - (left_spaces + len(title))))
+        file.write(f"{title.center(max_length + 4 + 4)}")
         file.write("|")
         file.write("\n")
 
@@ -343,11 +347,11 @@ def ex15(title, header, data, filename):
             for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+2))
+                    file.write(f"-"*(len(data[i][j])+4))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+2))
+                    file.write(f"-"*(len(data[i][j])+4))
             file.write("\n")
 
         # Writing the column names
@@ -355,11 +359,11 @@ def ex15(title, header, data, filename):
         for j in range(len(data[i])):
             if (j == (len(header) - 1)):
                 file.write("|")
-                file.write(f"{header[j].center((len(data[i][j])+2))}")
+                file.write(f"{header[j].center((len(data[i][j])+4))}")
                 file.write("|")
             else:
                 file.write("|")
-                file.write(f"{header[j].center((len(data[i][j])+2))}")
+                file.write(f"{header[j].center((len(data[i][j])+4))}")
         file.write("\n")
 
         # Writing the  horizontal line
@@ -367,11 +371,11 @@ def ex15(title, header, data, filename):
             for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+2))
+                    file.write(f"-"*(len(data[i][j])+4))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+2))
+                    file.write(f"-"*(len(data[i][j])+4))
             file.write("\n")
 
         # Writing the data
@@ -379,11 +383,11 @@ def ex15(title, header, data, filename):
             for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("|")
-                    file.write(f"{data[i][j].center((len(data[i][j])+2))}")
+                    file.write(f"{data[i][j].center((len(data[i][j])+4))}")
                     file.write("|")
                 else:
                     file.write("|")
-                    file.write(f"{data[i][j].center((len(data[i][j])+2))}")
+                    file.write(f"{data[i][j].center((len(data[i][j])+4))}")
             file.write("\n")
 
         # Writing the last horizontal line
@@ -391,11 +395,11 @@ def ex15(title, header, data, filename):
             for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+2))
+                    file.write(f"-"*(len(data[i][j])+4))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+2))
+                    file.write(f"-"*(len(data[i][j])+4))
             file.write("\n")
 
     # END SOLUTION

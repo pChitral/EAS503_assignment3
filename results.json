@@ -96,7 +96,7 @@
             "name": "test_ex15_2 (test_assignment3.TestAssignment3)",
             "score": 0.0,
             "max_score": 10,
-            "output": "Test Failed: '----[61 chars]----------\\n|                       MOST ACTIV[730 chars]---+' != '----[61 chars]-----\\n|                    MOST ACTIVE BY SHA[606 chars]-+\\n'\nDiff is 2441 characters long. Set self.maxDiff to None to see it.\n",
+            "output": "Test Failed: '----[66 chars]-----\\n|                       MOST ACTIVE BY [725 chars]---+' != '----[66 chars]----------\\n|                      MOST ACTIVE[705 chars]-+\\n'\nDiff is 2513 characters long. Set self.maxDiff to None to see it.\n",
             "visibility": "visible",
             "number": "15.2"
         },
@@ -412,6 +412,6 @@
     ],
     "leaderboard": [],
     "visibility": "visible",
-    "execution_time": "0.06",
+    "execution_time": "0.07",
     "score": 153.0
 }
