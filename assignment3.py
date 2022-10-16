@@ -316,11 +316,11 @@ def ex15(title, header, data, filename):
     # BEGIN SOLUTION
     lens = []
     for tuple in data:
-        sum = 0
+        summ = 0
         for i in range(len(tuple)):
             lens.append(len(str(tuple[i])) + 2)
-            sum += len(str(tuple[i])) + 2
-        lens.append(sum)
+            summ += len(str(tuple[i])) + 2
+        lens.append(summ)
     
     lens2 = []
     for header_name in header:
@@ -330,19 +330,22 @@ def ex15(title, header, data, filename):
             lens[i] = lens2[i]
         else:
             lens[i] = lens[i]
-    max_length = int(max(lens))
+
+    max_length = sum(lens[:len(header)])
+    print(lens)
+    print(max_length)
 
 
     with open(filename, "w") as file:
 
         # Writing the  horizontal line
         
-        file.write(f"-"*((3 + max_length + 2*len(header))))
+        file.write(f"-"*((  max_length + 4 )))
         file.write("\n")
 
         # Putting in the title
         file.write("|")
-        file.write(f"{title.center((1 + max_length + 2*len(header)))}")
+        file.write(f"{title.center(( max_length + 2 ))}")
         file.write("|")
         file.write("\n")
 
