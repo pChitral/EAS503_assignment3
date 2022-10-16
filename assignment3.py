@@ -318,7 +318,7 @@ def ex15(title, header, data, filename):
     for maal in data:
         sum = 0
         for i in range(len(maal)):
-            sum += len(maal[i]) + 2
+            sum += len(str(maal[i])) + 2
         lens.append(sum)
     max_length = int(max(lens))
 
@@ -326,80 +326,80 @@ def ex15(title, header, data, filename):
 
         # Writing the  horizontal line
         for i in range(1):
-            for j in range(len(str(data[i]))):
+            for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("-")
-                    file.write(f"-"*(len(str(data[i][j])+4)))
+                    file.write(f"-"*(max_length))
                     file.write("-")
                 else:
                     file.write("-")
-                    file.write(f"-"*(len(str(data[i][j])+4)))
+                    file.write(f"-"*(max_length))
             file.write("\n")
 
         # Putting in the title
         file.write("|")
-        file.write(f"{title.center(max_length + 4 + 4)}")
+        file.write(f"{title.center((max_length * len(data))+ 2)}")
         file.write("|")
         file.write("\n")
 
         # Writing the  horizontal line
         for i in range(1):
-            for j in range(len(str(data[i]))):
+            for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4)))
+                    file.write(f"-"*(max_length))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4)))
+                    file.write(f"-"*(max_length))
             file.write("\n")
 
         # Writing the column names
-        i=1
-        for j in range(len(str(data[i]))):
+        i = 1
+        for j in range(len(data[i])):
             if (j == (len(header) - 1)):
                 file.write("|")
-                file.write(f"{header[j].center((len(str(data[i][j])+4)))}")
+                file.write(f"{header[j].center((max_length))}")
                 file.write("|")
             else:
                 file.write("|")
-                file.write(f"{header[j].center((len(str(data[i][j])+4)))}")
+                file.write(f"{header[j].center((max_length))}")
         file.write("\n")
 
         # Writing the  horizontal line
         for i in range(1):
-            for j in range(len(str(data[i]))):
+            for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4)))
+                    file.write(f"-"*(max_length))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4)))
+                    file.write(f"-"*(max_length))
             file.write("\n")
 
         # Writing the data
         for i in range(len(data)):
-            for j in range(len(str(data[i]))):
+            for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("|")
-                    file.write(f"{str(data[i][j].center((len(str(data[i][j])+4))))}")
+                    file.write(f"{str(data[i][j]).center((max_length))}")
                     file.write("|")
                 else:
                     file.write("|")
-                    file.write(f"{str(data[i][j].center((len(str(data[i][j])+4))))}")
+                    file.write(f"{str(data[i][j]).center((max_length))}")
             file.write("\n")
 
         # Writing the last horizontal line
         for i in range(1):
-            for j in range(len(str(data[i]))):
+            for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4)))
+                    file.write(f"-"*(max_length))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(str(data[i][j])+4)))
+                    file.write(f"-"*(max_length))
             file.write("\n")
 
 
@@ -460,7 +460,7 @@ def ex19(filename):
     The files
     """
     # BEGIN SOLUTION
-    numbers=[]
+    numbers = []
 
     with open(filename, "r") as raw_file:
         for line in raw_file.readlines():
@@ -470,11 +470,11 @@ def ex19(filename):
                 pass
 
     numbers.sort()
-    middle_index=len(numbers) // 2
+    middle_index = len(numbers) // 2
     if len(numbers) == 0:
         return 'The file does not have any valid number to compute the median'
 
-    median=(numbers[middle_index] + numbers[middle_index-1]) / \
+    median = (numbers[middle_index] + numbers[middle_index-1]) / \
         2 if len(numbers) % 2 == 0 else numbers[middle_index]
 
     return median
@@ -487,7 +487,7 @@ def simulateProblem():
     """
     # BEGIN SOLUTION
     import random
-    first_characteroice=random.randint(0, 1)
+    first_characteroice = random.randint(0, 1)
 
     # we'll execute the code undder the if block when we wish to switcharacter the card
     if (random.randint(0, 1)):
@@ -512,11 +512,11 @@ def ex20():
     Return the probability of win due to sticking and win due to switcharactering
     """
     # BEGIN SOLUTION
-    stick=0
-    switcharacter=0
+    stick = 0
+    switcharacter = 0
 
     for i in range(10000):
-        outcome, experiment=simulateProblem()
+        outcome, experiment = simulateProblem()
         if [outcome, experiment] == [True, True]:
             stick += 1
         elif [outcome, experiment] == [True, False]:
