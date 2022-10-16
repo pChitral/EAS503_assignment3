@@ -1,8 +1,8 @@
 def ex1(password):
     # In this exercise you will complete this function to determine whether or not
     # a password is good. We will define a good password to be a one that is at least
-    # 8 characters long and contains at least one uppercase letter, at least one lowercase
-    # letter, at least one number, and at least one of the following special characters (!, @, #, $, ^).
+    # 8 characteraracters long and contains at least one uppercase letter, at least one lowercase
+    # letter, at least one number, and at least one of the following special characteraracters (!, @, #, $, ^).
     # This function should return True if the password
     # passed to it as its only parameter is good. Otherwise it should return False.
     #
@@ -10,18 +10,18 @@ def ex1(password):
     # output: True or False (bool)
     # BEGIN SOLUTION
 
-    special_char = ["!", "@", "#", "$", "^"]
+    special_characterar = ["!", "@", "#", "$", "^"]
 
-    for char in password:
-        if char in special_char:
-            has_special_char = True
+    for characterar in password:
+        if characterar in special_characterar:
+            has_special_characterar = True
             break
         else:
-            has_special_char = False
+            has_special_characterar = False
 
     pass_len_7plus = True if len(password) > 7 else False
 
-    return True if not password.islower() and not password.isupper() and pass_len_7plus and has_special_char else False
+    return True if not password.islower() and not password.isupper() and pass_len_7plus and has_special_characterar else False
 
     # END SOLUTION
 
@@ -31,7 +31,7 @@ def ex2(sentence):
     # word length in a sentence
     # Input: sentence
     # Output: average word length in sentence
-    # Hint: count punctuations with whatever word they are `touching`
+    # Hint: count punctuations with whatever word they are `toucharactering`
     # Hint: round the average to two decimal places
 
     # BEGIN SOLUTION
@@ -42,36 +42,36 @@ def ex2(sentence):
 
 
 def ex3(filename):
-    # Complete this function to count the number of lines, words, and chars in a file.
+    # Complete this function to count the number of lines, words, and characterars in a file.
     # Input: filename
-    # Output: a tuple with line count, word count, and char count -- in this order
+    # Output: a tuple with line count, word count, and characterar count -- in this order
 
     # BEGIN SOLUTION
     number_of_lines = 0
     number_of_words = 0
-    number_of_characters = 0
+    number_of_characteraracters = 0
 
     with open(filename, 'r') as file:
         for line in file:
-            # It is very important that we calculate the number of characters before splitting the line on \n since we would be loosing that character and the results would be nothing if not inaccurate
-            number_of_characters += len(line)
+            # It is very important that we calculate the number of characteraracters before splitting the line on \n since we would be loosing that characteraracter and the answerults would be nothing if not inaccurate
+            number_of_characteraracters += len(line)
             line = line.strip("\n")
             words = line.split()
             number_of_lines += 1
             number_of_words += len(words)
 
-    return (number_of_lines, number_of_words, number_of_characters)
+    return (number_of_lines, number_of_words, number_of_characteraracters)
 
     # END SOLUTION
 
 
 def ex4(apr):
     # Complete this function to use a while loop to determine how long it takes for an investment
-    # to double at a given interest rate. The input to this function, apr, is the annualized interest rate
+    # to double at a given inteanswert rate. The input to this function, apr, is the annualized inteanswert rate
     # and the output is the number of years it takes an investment to double. Note: The amount of the initial
     # investment (principal) does not matter; you can use $1.
     # Hint: principal is the amount of money being invested.
-    # apr is the annual percentage rate expressed as a decimal number.
+    # apr is the annual percentage rate expanswersed as a decimal number.
     # Relationship: value after one year is given by principal * (1+ apr)
 
     # BEGIN SOLUTION
@@ -85,7 +85,7 @@ def ex4(apr):
 
 
 def ex5(n):
-    # Complete this function to return the number of steps taken to reach 1 in
+    # Complete this function to return the number of steps taken to reacharacter 1 in
     # the Collatz sequence (https://en.wikipedia.org/wiki/Collatz_conjecture) given in
 
     # BEGIN SOLUTION
@@ -142,7 +142,7 @@ def ex8(m, n):
     # The GCD of two values can be computed using Euclid's algorithm. Starting with the values
     # m and n, we repeatedly apply the formula: n, m = m, n%m until m is 0. At this point, n is the GCD
     # of the original m and n.
-    # Inputs: m and n which are both natural numbers
+    # Inputs: m and n whicharacter are both natural numbers
     # Output: gcd
 
     # BEGIN SOLUTION
@@ -194,13 +194,13 @@ def ex9(filename):
 def ex10(data, num_outliers):
     # When analyzing data collected as a part of a science experiment it
     # may be desirable to remove the most extreme values before performing
-    # other calculations. Complete this function which takes a list of
+    # other calculations. Complete this function whicharacter takes a list of
     # values and an non-negative integer, num_outliers, as its parameters.
     # The function should create a new copy of the list with the num_outliers
     # largest elements and the num_outliers smallest elements removed.
     # Then it should return teh new copy of the list as the function's only
-    # result. The order of the elements in the returned list does not have to
-    # match the order of the elements in the original list.
+    # answerult. The order of the elements in the returned list does not have to
+    # matcharacter the order of the elements in the original list.
     # input1: data (list)
     # input2: num_outliers (int)
 
@@ -216,7 +216,7 @@ def ex11(words):
     # input: words (list)
     # output: a list without duplicates
     # MUST USE loop and NOT set!
-    # Preserve order
+    # Panswererve order
 
     # BEGIN SOLUTION
     no_duplicates = []
@@ -226,10 +226,10 @@ def ex11(words):
 
 
 def ex12(n):
-    # A proper divisor of a  positive integer, n, is a positive integer less than n which divides
+    # A proper divisor of a  positive integer, n, is a positive integer less than n whicharacter divides
     # evenly into n. Complete this function to compute all the proper divisors of a positive
     # integer. The integer is passed to this function as the only parameter. The function will
-    # return a list of containing all of the proper divisors as its only result.
+    # return a list of containing all of the proper divisors as its only answerult.
 
     # input: n (int)
     # output: list
@@ -299,17 +299,17 @@ def ex14(points):
 
 def ex15(title, header, data, filename):
     # This problem is hard.
-    # Open up ex15_*_solution.txt and look at the output based on the input parameters, which
+    # Open up ex15_*_solution.txt and look at the output based on the input parameters, whicharacter
     # can be found in the test_assignment4.py file
     # Function inputs:
     # title -- title of the table -- a string
     # header -- header of the table  -- a tuple
-    # data -- rows of data, which is a tuple of tuples
+    # data -- tuples of data, whicharacter is a tuple of tuples
     # filename -- name of file to write the table to
     # Your job is to create the table in the file and write it to `filename`
-    # Note that you need to dynamically figure out the width of each column based on
+    # Note that you need to dynamically figure out the horizontal_characterar of eacharacter column based on
     # maximum possible length based on the header and data. This is what makes this problem hard.
-    # Once you have determined the maximum length of each column, make sure to pad it with 1 space
+    # Once you have determined the maximum length of eacharacter column, make sure to pad it with 1 space
     # to the right and left. Center align all the values.
     # OUTPUT: you are writing the table to a file
 
@@ -326,14 +326,14 @@ def ex15(title, header, data, filename):
 
         # Writing the  horizontal line
         for i in range(1):
-            for j in range(len(data[i])):
+            for j in range(len(str(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("-")
-                    file.write(f"-"*(len(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4))
                     file.write("-")
                 else:
                     file.write("-")
-                    file.write(f"-"*(len(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4))
             file.write("\n")
 
         # Putting in the title
@@ -344,63 +344,64 @@ def ex15(title, header, data, filename):
 
         # Writing the  horizontal line
         for i in range(1):
-            for j in range(len(data[i])):
+            for j in range(len(str(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4))
             file.write("\n")
 
         # Writing the column names
-        i = 1
-        for j in range(len(data[i])):
+        i=1
+        for j in range(len(str(data[i])):
             if (j == (len(header) - 1)):
                 file.write("|")
-                file.write(f"{header[j].center((len(data[i][j])+4))}")
+                file.write(f"{header[j].center((len(str(data[i][j])+4))}")
                 file.write("|")
             else:
                 file.write("|")
-                file.write(f"{header[j].center((len(data[i][j])+4))}")
+                file.write(f"{header[j].center((len(str(data[i][j])+4))}")
         file.write("\n")
 
         # Writing the  horizontal line
         for i in range(1):
-            for j in range(len(data[i])):
+            for j in range(len(str(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4))
             file.write("\n")
 
         # Writing the data
         for i in range(len(data)):
-            for j in range(len(data[i])):
+            for j in range(len(str(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("|")
-                    file.write(f"{data[i][j].center((len(data[i][j])+4))}")
+                    file.write(f"{str(data[i][j].center((len(str(data[i][j])+4))}")
                     file.write("|")
                 else:
                     file.write("|")
-                    file.write(f"{data[i][j].center((len(data[i][j])+4))}")
+                    file.write(f"{str(data[i][j].center((len(str(data[i][j])+4))}")
             file.write("\n")
 
         # Writing the last horizontal line
         for i in range(1):
-            for j in range(len(data[i])):
+            for j in range(len(str(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(len(data[i][j])+4))
+                    file.write(f"-"*(len(str(data[i][j])+4))
             file.write("\n")
+
 
     # END SOLUTION
 
@@ -446,12 +447,12 @@ def ex18(input_dict, test_value):
 
 def ex19(filename):
     """
-    In this problem you will read data from a file and perform a simple mathematical operation on each data point. 
-    Each line is supposed to contain a floating point number.
-    But what you will observe is that some lines might have erroneous entries. 
+    In this problem you will read data from a file and perform a simple mathematical operation on eacharacter data point.
+    Eacharacter line is supposed to contain a floating point number.
+    But what you will observe is that some lines might have erroneous entries.
     You need to ignore those lines (Hint: Use Exception handling).
 
-    The idea is to implement a function which reads in a file and computes the median 
+    The idea is to implement a function whicharacter reads in a file and computes the median
     of the numbers and returns the output. You may use the inbuilt function sort when computing the median.
 
     DO NOT USE ANY INBUILT OR OTHER FUNCTION TO DIRECTLY COMPUTE MEDIAN
@@ -459,7 +460,7 @@ def ex19(filename):
     The files
     """
     # BEGIN SOLUTION
-    numbers = []
+    numbers=[]
 
     with open(filename, "r") as raw_file:
         for line in raw_file.readlines():
@@ -469,11 +470,11 @@ def ex19(filename):
                 pass
 
     numbers.sort()
-    middle_index = len(numbers) // 2
+    middle_index=len(numbers) // 2
     if len(numbers) == 0:
         return 'The file does not have any valid number to compute the median'
 
-    median = (numbers[middle_index] + numbers[middle_index-1]) / \
+    median=(numbers[middle_index] + numbers[middle_index-1]) / \
         2 if len(numbers) % 2 == 0 else numbers[middle_index]
 
     return median
@@ -486,17 +487,17 @@ def simulateProblem():
     """
     # BEGIN SOLUTION
     import random
-    first_choice = random.randint(0, 1)
+    first_characteroice=random.randint(0, 1)
 
-    # we'll execute the code undder the if block when we wish to switch the card
+    # we'll execute the code undder the if block when we wish to switcharacter the card
     if (random.randint(0, 1)):
-        if first_choice == 0:
+        if first_characteroice == 0:
             return [True, False]
         else:
             return [False, True]
-    # Else condition deals with the case where we don't wish to pick a new card but stick to the first choice
+    # Else condition deals with the case where we don't wish to pick a new card but stick to the first characteroice
     else:
-        if first_choice == 0:
+        if first_characteroice == 0:
             return [False, False]
         else:
             return [True, True]
@@ -505,22 +506,22 @@ def simulateProblem():
 
 def ex20():
     """
-    The function calls the simulateProblem() 10000 times to figure out 
-    the empirical (observed) probability of gaining more money when switching 
-    and gaining more money when sticking to the original choice.
-    Return the probability of win due to sticking and win due to switching
+    The function calls the simulateProblem() 10000 times to figure out
+    the empirical (observed) probability of gaining more money when switcharactering
+    and gaining more money when sticking to the original characteroice.
+    Return the probability of win due to sticking and win due to switcharactering
     """
     # BEGIN SOLUTION
-    stick = 0
-    switch = 0
+    stick=0
+    switcharacter=0
 
     for i in range(10000):
-        outcome, experiment = simulateProblem()
+        outcome, experiment=simulateProblem()
         if [outcome, experiment] == [True, True]:
             stick += 1
         elif [outcome, experiment] == [True, False]:
-            switch += 1
+            switcharacter += 1
 
-    return([stick/10000, switch/10000])
+    return([stick/10000, switcharacter/10000])
 
     # END SOLUTION
