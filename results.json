@@ -88,7 +88,7 @@
             "name": "test_ex15_1 (test_assignment3.TestAssignment3)",
             "score": 0.0,
             "max_score": 10,
-            "output": "Test Failed: object of type 'int' has no len()\n",
+            "output": "Test Failed: '----[36 chars]-----\\n|           Cereal Yields (kg/ha)      [331 chars]---+' != '----[36 chars]------------\\n|              Cereal Yields (kg[309 chars]-+\\n'\nDiff is 1053 characters long. Set self.maxDiff to None to see it.\n",
             "visibility": "visible",
             "number": "15.1"
         },
@@ -96,7 +96,7 @@
             "name": "test_ex15_2 (test_assignment3.TestAssignment3)",
             "score": 0.0,
             "max_score": 10,
-            "output": "Test Failed: can only concatenate str (not \"int\") to str\n",
+            "output": "Test Failed: '----[66 chars]-----\\n|                       MOST ACTIVE BY [725 chars]---+' != '----[66 chars]-------\\n|                        MOST ACTIVE [731 chars]-+\\n'\nDiff is 1435 characters long. Set self.maxDiff to None to see it.\n",
             "visibility": "visible",
             "number": "15.2"
         },
@@ -104,7 +104,7 @@
             "name": "test_ex15_3 (test_assignment3.TestAssignment3)",
             "score": 0.0,
             "max_score": 10,
-            "output": "Test Failed: object of type 'int' has no len()\n",
+            "output": "Test Failed: '----[35 chars]-------------------\\n|                     Stu[509 chars]---+' != '----[35 chars]-----\\n|              Student Grades          [483 chars]-+\\n'\nDiff is 1604 characters long. Set self.maxDiff to None to see it.\n",
             "visibility": "visible",
             "number": "15.3"
         },
@@ -412,6 +412,6 @@
     ],
     "leaderboard": [],
     "visibility": "visible",
-    "execution_time": "0.05",
+    "execution_time": "0.06",
     "score": 153.0
 }

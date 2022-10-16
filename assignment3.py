@@ -315,30 +315,34 @@ def ex15(title, header, data, filename):
 
     # BEGIN SOLUTION
     lens = []
-    for maal in data:
+    for tuple in data:
         sum = 0
-        for i in range(len(maal)):
-            sum += len(str(maal[i])) + 2
+        for i in range(len(tuple)):
+            lens.append(len(str(tuple[i])) + 2)
+            sum += len(str(tuple[i])) + 2
         lens.append(sum)
+    
+    lens2 = []
+    for header_name in header:
+        lens2.append(len(str(header_name)) + 2)
+    for i in range(len(header)):
+        if lens2[i] > lens[i]:
+            lens[i] = lens2[i]
+        else:
+            lens[i] = lens[i]
     max_length = int(max(lens))
+
 
     with open(filename, "w") as file:
 
         # Writing the  horizontal line
-        for i in range(1):
-            for j in range(len(data[i])):
-                if (j == (len(header) - 1)):
-                    file.write("-")
-                    file.write(f"-"*(max_length))
-                    file.write("-")
-                else:
-                    file.write("-")
-                    file.write(f"-"*(max_length))
-            file.write("\n")
+        
+        file.write(f"-"*((3 + max_length + 2*len(header))))
+        file.write("\n")
 
         # Putting in the title
         file.write("|")
-        file.write(f"{title.center((max_length * len(data))+ 2)}")
+        file.write(f"{title.center((1 + max_length + 2*len(header)))}")
         file.write("|")
         file.write("\n")
 
@@ -347,11 +351,11 @@ def ex15(title, header, data, filename):
             for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(max_length))
+                    file.write(f"-"*(lens[j]))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(max_length))
+                    file.write(f"-"*(lens[j]))
             file.write("\n")
 
         # Writing the column names
@@ -359,11 +363,11 @@ def ex15(title, header, data, filename):
         for j in range(len(data[i])):
             if (j == (len(header) - 1)):
                 file.write("|")
-                file.write(f"{header[j].center((max_length))}")
+                file.write(f"{header[j].center((lens[j]))}")
                 file.write("|")
             else:
                 file.write("|")
-                file.write(f"{header[j].center((max_length))}")
+                file.write(f"{header[j].center((lens[j]))}")
         file.write("\n")
 
         # Writing the  horizontal line
@@ -371,11 +375,11 @@ def ex15(title, header, data, filename):
             for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(max_length))
+                    file.write(f"-"*(lens[j]))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(max_length))
+                    file.write(f"-"*(lens[j]))
             file.write("\n")
 
         # Writing the data
@@ -383,11 +387,11 @@ def ex15(title, header, data, filename):
             for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("|")
-                    file.write(f"{str(data[i][j]).center((max_length))}")
+                    file.write(f"{str(data[i][j]).center((lens[j]))}")
                     file.write("|")
                 else:
                     file.write("|")
-                    file.write(f"{str(data[i][j]).center((max_length))}")
+                    file.write(f"{str(data[i][j]).center((lens[j]))}")
             file.write("\n")
 
         # Writing the last horizontal line
@@ -395,11 +399,11 @@ def ex15(title, header, data, filename):
             for j in range(len(data[i])):
                 if (j == (len(header) - 1)):
                     file.write("+")
-                    file.write(f"-"*(max_length))
+                    file.write(f"-"*(lens[j]))
                     file.write("+")
                 else:
                     file.write("+")
-                    file.write(f"-"*(max_length))
+                    file.write(f"-"*(lens[j]))
             file.write("\n")
 
 
