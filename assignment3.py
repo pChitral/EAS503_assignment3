@@ -315,100 +315,36 @@ def ex15(title, header, data, filename):
 
     # BEGIN SOLUTION
     lens = []
-    for tuple in data:
-        summ = 0
-        for i in range(len(tuple)):
-            lens.append(len(str(tuple[i])) + 2)
-            summ += len(str(tuple[i])) + 2
-        lens.append(summ)
-    
-    lens2 = []
-    for header_name in header:
-        lens2.append(len(str(header_name)) + 2)
     for i in range(len(header)):
-        if lens2[i] > lens[i]:
-            lens[i] = lens2[i]
-        else:
-            lens[i] = lens[i]
+        lens.append(len(header[i]))
 
-    max_length = sum(lens[:len(header)])
-    print(lens)
-    print(max_length)
-
+    for i in range(len(data)):
+        for j in range(len(data[i])):
+            if(lens[j] < len(str(data[i][j]))):
+                lens[j] = len(str(data[i][j]))
 
     with open(filename, "w") as file:
-
-        # Writing the  horizontal line
-        
-        file.write(f"-"*((  max_length + 4 )))
-        file.write("\n")
-
-        # Putting in the title
-        file.write("|")
-        file.write(f"{title.center(( max_length + 2 ))}")
-        file.write("|")
-        file.write("\n")
-
-        # Writing the  horizontal line
-        for i in range(1):
-            for j in range(len(data[i])):
-                if (j == (len(header) - 1)):
-                    file.write("+")
-                    file.write(f"-"*(lens[j]))
-                    file.write("+")
-                else:
-                    file.write("+")
-                    file.write(f"-"*(lens[j]))
-            file.write("\n")
-
-        # Writing the column names
-        i = 1
-        for j in range(len(data[i])):
-            if (j == (len(header) - 1)):
-                file.write("|")
-                file.write(f"{header[j].center((lens[j]))}")
-                file.write("|")
-            else:
-                file.write("|")
-                file.write(f"{header[j].center((lens[j]))}")
-        file.write("\n")
-
-        # Writing the  horizontal line
-        for i in range(1):
-            for j in range(len(data[i])):
-                if (j == (len(header) - 1)):
-                    file.write("+")
-                    file.write(f"-"*(lens[j]))
-                    file.write("+")
-                else:
-                    file.write("+")
-                    file.write(f"-"*(lens[j]))
-            file.write("\n")
-
-        # Writing the data
+        width_of_title = sum(lens) + 2*len(lens) + len(lens)-1
+        horizontal_line = '-'*(width_of_title+2)
+        final_title = '|' + f'{title:^{width_of_title}}' + '|'
+        plus_dash_line = ''
+        tuple_data = ''
+        for x in lens:
+            # print(x)
+            plus_dash_line += '+' + '-' * (x+2)
         for i in range(len(data)):
             for j in range(len(data[i])):
-                if (j == (len(header) - 1)):
-                    file.write("|")
-                    file.write(f"{str(data[i][j]).center((lens[j]))}")
-                    file.write("|")
-                else:
-                    file.write("|")
-                    file.write(f"{str(data[i][j]).center((lens[j]))}")
-            file.write("\n")
+                tuple_data += '|' + ' ' + f'{data[i][j]:^{lens[j]}}' + ' '
+            tuple_data += '|' + '\n' if(i != len(data)-1) else '|'
 
-        # Writing the last horizontal line
-        for i in range(1):
-            for j in range(len(data[i])):
-                if (j == (len(header) - 1)):
-                    file.write("+")
-                    file.write(f"-"*(lens[j]))
-                    file.write("+")
-                else:
-                    file.write("+")
-                    file.write(f"-"*(lens[j]))
-            file.write("\n")
+        column_names = ''
+        for i in range(len(header)):
+            column_names += '|' + ' ' + f'{header[i]:^{lens[i]}}' + ' '
+        column_names += '|'
 
+        final_answer = horizontal_line+'\n'+final_title+'\n' + plus_dash_line + '+' + '\n' + \
+            column_names+'\n'+plus_dash_line + '+'+'\n'+tuple_data+'\n'+plus_dash_line+'+'
+        file.write(final_answer)
 
     # END SOLUTION
 
